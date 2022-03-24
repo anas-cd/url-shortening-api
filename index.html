@@ -9,21 +9,91 @@
         <meta name="theme-color" content="#1843c1" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
 
-        <title></title>
-
+        <title>Shortly URL shortening API Challenge</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"> 
         
         <!-- CSS File -->
         <link rel="stylesheet" href="app/dist/style.css">
     </head>
     <body>
+        <!-- navigation bar -->
+        <nav id="nav">
+            <div class="wc flex">
+                    <a href="#"><img src="/images/logo.svg" alt="Shortly Logo, welcome to shortly"></a>
+                    
+                    
 
-        <main>
+                    <div class="nlc">
+                        <div class="NavLinks" >
+                            <a href="#">Features</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Resources</a>
+                            <a href="#">Login</a>
+                            <a href="#">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <div id="BurgerMenue" class="BurgerMenue">
+                        <div class="BurgerBars"></div>
+                        <div class="BurgerBars"></div>
+                        <div class="BurgerBars"></div>
+                    </div>
+
+                    
+            </div>
             
-            <h1>your boilerplate is ready</h1>
-            
-        </main>
+
+        </nav>
+
+        <!-- hero -->
+        <header id="hero">
+
+            <div class="hero wc">
+                
+                <img src="/images/illustration-working.svg" alt="More than just short links">
+                <div class="HeroInfo">
+                    <h1>More than just shorter links</h1>
+                    <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <button>Get Started</button>
+                </div>
+                
+                
+            </div>
+        
+        </header>
+
+        <!-- url shortner -->
+        <section id="main">
+            <div class="wc">
+                <div class="form">
+                    <form action="" method="post">
+                        <input type="url" name="url" id="url" placeholder="Shorten a link here...">
+                        <!-- <label for="url">url Here</label> -->
+                        <button type="submit">Shorten It!</button>
+                    </form>
+                </div>
+                <div class="LinkList"></div>
+            </div>
+            <div class="wc">
+                <div class="StatInfo">
+                    <h2></h2>
+                    <p></p>
+                    <div class="flex__row">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- call to action -->
+        <section id="cta"></section>
+
+        <!-- footer info -->
+        <footer id="footer"></footer>
 
         <!-- JavaScript File -->
         <script src="app/dist/all.js"></script>

@@ -1,8 +1,21 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 h1, h2, h3 {
     margin-top: 0px;
 }
 
 h1 {
-    text-transform: uppercase;
-    color: $black;
+    color: $very_dark_violet;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    @media #{$mq-1180-down} {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+p {
+    color: $grayish_violet;
 }
