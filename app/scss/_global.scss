@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    
+    overflow-x: hidden;    
     // helper classes
 
     // width container for side spaces
@@ -251,7 +251,7 @@ body {
             height: 168px;
             border-radius: 0.8rem;
             background-color: $dark_violet;
-            background-image: url(/images/bg-shorten-desktop.svg);
+            background-image: url(../../images/bg-shorten-desktop.svg);
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
@@ -263,7 +263,7 @@ body {
                 flex-flow: column nowrap;
                 padding: 0rem 1.5rem;
                 justify-content: space-evenly;
-                background-image: url(/images/bg-shorten-mobile.svg);
+                background-image: url(../../images/bg-shorten-mobile.svg);
                 background-repeat: no-repeat;
                 background-position: 100% 0%;
             }
@@ -343,7 +343,7 @@ body {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-
+                flex: 0.6;
                 @media #{$mq-1180-down} {
                     border-bottom: 1px solid $grayish_violet;
                     padding: 1rem;
@@ -499,3 +499,119 @@ body {
     
 }
 
+#cta {
+    height: 250px;
+    background-color: $dark_violet;
+    background-image: url(../../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media #{$mq-620-down} {
+        background-image: url(../../images/bg-boost-mobile.svg);
+    }
+    h2 {
+        color: $white;
+        font-size: 2rem;
+
+        @media #{$mq-620-down} {
+            font-size: 1.8rem;
+        }
+    }
+
+    button {
+        background-color: $cayan;
+        color: $white;
+        border: none;
+        border-radius: 2rem;
+        height: 56px;
+        width: 197px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        font-family: inherit;
+        transition-duration: 200ms;
+        &:hover {
+            cursor: pointer;
+            background-color: #6fd0d0;
+        }
+    }
+}
+
+#footer {
+    background-color: $very_dark_violet;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    >.FooterFlex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 4rem;
+
+        @media #{$mq-1180-down} {
+            flex-flow: column nowrap;
+            text-align: center;
+        }
+
+        .logo {
+
+            @media #{$mq-1180-down} {
+                margin-bottom: 2rem;
+            }
+        }
+        .FooterList {
+            p {
+                &:first-child {
+                    color: $white;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                }
+                @media #{$mq-1180-down} {
+                    margin-top: 2rem;
+                }
+            }
+
+            a {
+                display: block;
+                color: $grayish_violet;
+                text-decoration: none;
+                transition-duration: 100ms;
+                line-height: 1.8rem;
+                &:hover {
+                    cursor: pointer;
+                    color: $cayan;
+                }
+            }
+        }
+
+        .social {
+            flex: 0.2;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            @media #{$mq-1180-down} {
+                margin-top: 2rem;
+            }
+            a,svg path{
+                transition-duration: 200ms;
+                fill: $white;
+            }
+            a:hover {
+                svg path {
+                    fill: $cayan;
+                }
+            }
+            
+
+
+        }
+    }
+}
