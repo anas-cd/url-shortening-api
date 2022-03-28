@@ -1,7 +1,8 @@
 
+const body = document.body;
 const burger = document.querySelector("#BurgerMenue"); 
 const menue = document.querySelector("div.nlc");
-const body = document.body;
+const cbtn = document.getElementsByClassName("copy");
 // Global
 app.global = {
     init: function(){ // Load all global functions here
@@ -27,3 +28,16 @@ burger.addEventListener('click', () => {
     console.log("clickeddd");
     app.global.MobMenue()
 });
+
+
+
+for (let i = 0; i < cbtn.length; i++) {
+    const element = cbtn[i];
+    element.addEventListener('click', async () => {
+        console.log("element clicked");
+        element.innerHTML = "Copied!";
+        setTimeout(() => {
+            element.innerHTML = "Copy";
+        }, 2000);
+    });
+}
