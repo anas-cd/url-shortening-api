@@ -18,6 +18,10 @@
         
         <!-- CSS File -->
         <link rel="stylesheet" href="app/dist/style.css">
+        <style>
+            .attribution { font-size: 11px; text-align: center; }
+            .attribution a { color: hsl(228, 45%, 44%); }
+          </style>
     </head>
     <body>
         <!-- navigation bar -->
@@ -70,10 +74,10 @@
         <section id="main">
             <div class="wc">
                 <div class="form">
-                    <form action="" method="post">
-                        <input type="url" name="url" id="url" placeholder="Shorten a link here...">
+                    <form method="get">
+                        <input type="url" name="url" id="url" placeholder="Shorten a link here..." required>
                         <!-- <label for="url">url Here</label> -->
-                        <button type="submit">Shorten It!</button>
+                        <button type="button">Shorten It!</button>
                     </form>
                 </div>
                 <div class="LinkList">
@@ -171,7 +175,10 @@
             </div>
 
         </footer>
-
+        <div role="contentinfo" class="attribution">
+            Designed by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Anas Ali</a>.
+          </div>
         <!-- JavaScript File -->
         <script src="app/dist/all.js"></script>
     </body>
